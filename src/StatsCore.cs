@@ -151,7 +151,6 @@ namespace DropStatistics
             isHideout = false;
             isTown = true;
             areaHash = 0;
-            GameController.Area.OnAreaChange += OnAreaChange;
             imgDwn = new PoeImageDownloader(LocalPluginDirectory.Replace("\\","/"));
             background = new RectangleF();
             itemsDublicates = new HashSet<long>();
@@ -173,8 +172,20 @@ namespace DropStatistics
                 miscData.NormalMiscItems.Add("SampleBaseName1", 0);
                 miscData.NormalMiscItems.Add("SampleBaseName2", 0);
             }
+            OnPluginToggle();
+            Settings.Enable.OnValueChanged += OnPluginToggle;
         }
-
+        public void OnPluginToggle()
+        {
+            if (Settings.Enable.Value)
+            {
+                GameController.Area.OnAreaChange += OnAreaChange;
+            }
+            else
+            {
+                GameController.Area.OnAreaChange -= OnAreaChange;
+            }
+        }
         private void WriteToFile()
         {
             string data = JsonConvert.SerializeObject(items, Formatting.Indented);
