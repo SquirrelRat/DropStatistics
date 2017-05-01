@@ -32,7 +32,6 @@ namespace DropStatistics
         public override void Render()
         {
             base.Render();
-            LogMessage(GameController.Game.IngameState.Data.LocalPlayer.GetComponent<Positioned>().GridPos.ToString(), 0);
             if (!Settings.Enable)
                 return;
             if ((isHideout || isTown) && !Settings.showUIInTownHO)
