@@ -133,10 +133,10 @@ namespace DropStatistics
             switch (Settings.League.Value)
             {
                 case 1:
-                    League = "Hardcore+Legacy";
+                    League = "Hardcore+Harbinger";
                     break;
                 case 2:
-                    League = "Legacy";
+                    League = "Harbinger";
                     break;
                 case 3:
                     League = "Hardcore";
