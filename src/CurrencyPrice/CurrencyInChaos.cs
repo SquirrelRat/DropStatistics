@@ -81,6 +81,16 @@ namespace DropStatistics.CurrencyPrice
             PoeTradeCurrencyIndex.Add("Uul-Netol's Breachstone", 65);
             PoeTradeCurrencyIndex.Add("Chayula's Breachstone", 66);
             PoeTradeCurrencyIndex.Add("Ancient Reliquary Key", 494);
+            PoeTradeCurrencyIndex.Add("Divine Vessel", 512);
+            PoeTradeCurrencyIndex.Add("Orb of Annulment", 513);
+            PoeTradeCurrencyIndex.Add("Orb of Binding", 514);
+            PoeTradeCurrencyIndex.Add("Orb of Horizons", 515);
+            PoeTradeCurrencyIndex.Add("Harbinger's Orb", 516);
+            PoeTradeCurrencyIndex.Add("Engineer's Orb", 517);
+            PoeTradeCurrencyIndex.Add("Ancient Orb", 518);
+            PoeTradeCurrencyIndex.Add("Annulment Shard", 519);
+            PoeTradeCurrencyIndex.Add("Mirror Shard", 520);
+            PoeTradeCurrencyIndex.Add("Exalted Shard", 521);
             #endregion
             #region LeagueStone
             PoeTradeCurrencyIndex.Add("Ambush Leaguestone", 495);
