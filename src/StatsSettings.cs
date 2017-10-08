@@ -17,6 +17,7 @@ namespace DropStatistics
             isAutoSave = false;
             showUIInTownHO = false;
             shouldDisableWorthChaos = true;
+            resetOnAreaChange = false;
             MiscPositionX = new RangeNode<float>(0f, 0f, 100f);
             MiscPositionY = new RangeNode<float>(10.0f, 0.0f, 100.0f);
             PositionX = new RangeNode<float>(0f, 0f, 100f);
@@ -36,26 +37,29 @@ namespace DropStatistics
         public ToggleNode showUIInTownHO { get; set; }
         [Menu("Disable Worth Chaos Feature", 2)]
         public ToggleNode shouldDisableWorthChaos { get; set; }
+        [Menu("Reset on Area Change", 3)]
+        public ToggleNode resetOnAreaChange { get; set; }
+
         #region CurrencyUI
-        [Menu("Display Currency UI",3)]
+        [Menu("Display Currency UI",4)]
         public ToggleNode isCurrencyDisplay { get; set; }
-        [Menu("HC Tmp/ SC Tmp/ HC Standard / SC Standard",4,3)]
+        [Menu("HC Tmp/ SC Tmp/ HC Standard / SC Standard",5,4)]
         public RangeNode<int> League { get; set; }
-        [Menu("Hide Currencies worth less than X Chaos",5,3)]
+        [Menu("Hide Currencies worth less than X Chaos",6,4)]
         public RangeNode<int> worthChaos { get; set; } 
-        [Menu("Position X",6,3)]
+        [Menu("Position X",7,4)]
         public RangeNode<float> PositionX { get; set; }
-        [Menu("Position Y",7,3)]
+        [Menu("Position Y",8,4)]
         public RangeNode<float> PositionY { get; set; }
-        [Menu("Box Width",8,3)]
+        [Menu("Box Width",9,4)]
         public RangeNode<float> XSize { get; set; }
-        [Menu("Text Size",9,3)]
+        [Menu("Text Size",10,4)]
         public RangeNode<int> textSize { get; set; }
-        [Menu("Image Size",10,3)]
+        [Menu("Image Size",11,4)]
         public RangeNode<float> imgSize { get; set; }
-        [Menu("Border Color",11,3)]
+        [Menu("Border Color",12,4)]
         public ColorNode BorderColor { get; set; }
-        [Menu("Text Color",12,3)]
+        [Menu("Text Color",13,4)]
         public ColorNode ForegroundColor { get; set; }
         #endregion
 

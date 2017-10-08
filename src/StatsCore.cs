@@ -212,6 +212,17 @@ namespace DropStatistics
                         LogMessage("New Area/Instance Detected. Configuring DropStatistic Plugin.", 4);
                         itemsDublicates.Clear();
                         areaHash = area.CurrentArea.Hash;
+                        if (Settings.resetOnAreaChange.Value)
+                        {
+                            items.Clear();
+                            miscData.NormalMiscItems.Clear();
+                            miscData.total6LDrops = 0;
+                            miscData.total6SDrops = 0;
+                            miscData.totalMagicDrops = 0;
+                            miscData.totalRareDrops = 0;
+                            miscData.totalRGBDrops = 0;
+                            miscData.totalUniqueDrops = 0;
+                        }
                     }
                 }
             }
