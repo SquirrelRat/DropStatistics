@@ -8,16 +8,16 @@ namespace DropStatistics
     {
         public StatsSettings()
         {
-            isCurrencyDisplay = false;
-            isMiscDisplay = false;
-            isWorthChaos = false;
+            isCurrencyDisplay = true;
+            isMiscDisplay = true;
+            isWorthChaos = true;
             isSocketItems = false;
             isRarityItems = false;
             isMiscItems = false;
             isAutoSave = false;
-            showUIInTownHO = false;
-            shouldDisableWorthChaos = true;
-            resetOnAreaChange = false;
+            showUIInTownHO = true;
+            shouldDisableWorthChaos = false;
+            resetOnAreaChange = true;
             MiscPositionX = new RangeNode<float>(0f, 0f, 100f);
             MiscPositionY = new RangeNode<float>(10.0f, 0.0f, 100.0f);
             PositionX = new RangeNode<float>(0f, 0f, 100f);
@@ -43,7 +43,7 @@ namespace DropStatistics
         #region CurrencyUI
         [Menu("Display Currency UI",4)]
         public ToggleNode isCurrencyDisplay { get; set; }
-        [Menu("HC Tmp/ SC Tmp/ HC Standard / SC Standard",5,4)]
+        [Menu("Stnd/ HC / HC Bestiary / SC Bestiary",5,4)]
         public RangeNode<int> League { get; set; }
         [Menu("Hide Currencies worth less than X Chaos",6,4)]
         public RangeNode<int> worthChaos { get; set; } 

@@ -24,7 +24,7 @@ namespace DropStatistics
         private HashSet<long> itemsDublicates = null;
         private double TotalValue;
         private string League;
-        private int areaHash;
+        private uint areaHash;
         private bool isHideout;
         private bool isTown;
         private MiscTrackers miscData;
@@ -133,16 +133,16 @@ namespace DropStatistics
             switch (Settings.League.Value)
             {
                 case 1:
-                    League = "Hardcore+Harbinger";
+                    League = "Standard";
                     break;
                 case 2:
-                    League = "Harbinger";
-                    break;
-                case 3:
                     League = "Hardcore";
                     break;
+                case 3:
+                    League = "Hardcore+Bestiary";
+                    break;
                 default:
-                    League = "Standard";
+                    League = "Bestiary";
                     break;
             }
             currencyValue = new CurrencyInChaos(League);
