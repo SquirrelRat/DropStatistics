@@ -80,36 +80,8 @@ namespace DropStatistics.CurrencyPrice
             PoeTradeCurrencyIndex.Add("Esh's Breachstone", 64);
             PoeTradeCurrencyIndex.Add("Uul-Netol's Breachstone", 65);
             PoeTradeCurrencyIndex.Add("Chayula's Breachstone", 66);
-            PoeTradeCurrencyIndex.Add("Ancient Reliquary Key", 494);
             PoeTradeCurrencyIndex.Add("Divine Vessel", 512);
             PoeTradeCurrencyIndex.Add("Orb of Annulment", 513);
-            PoeTradeCurrencyIndex.Add("Orb of Binding", 514);
-            PoeTradeCurrencyIndex.Add("Orb of Horizons", 515);
-            PoeTradeCurrencyIndex.Add("Harbinger's Orb", 516);
-            PoeTradeCurrencyIndex.Add("Engineer's Orb", 517);
-            PoeTradeCurrencyIndex.Add("Ancient Orb", 518);
-            PoeTradeCurrencyIndex.Add("Annulment Shard", 519);
-            PoeTradeCurrencyIndex.Add("Mirror Shard", 520);
-            PoeTradeCurrencyIndex.Add("Exalted Shard", 521);
-            #endregion
-            #region LeagueStone
-            PoeTradeCurrencyIndex.Add("Ambush Leaguestone", 495);
-            PoeTradeCurrencyIndex.Add("Anarchy Leaguestone", 496);
-            PoeTradeCurrencyIndex.Add("Beyond Leaguestone", 497);
-            PoeTradeCurrencyIndex.Add("Bloodlines Leaguestone", 498);
-            PoeTradeCurrencyIndex.Add("Breach Leaguestone", 499);
-            PoeTradeCurrencyIndex.Add("Domination Leaguestone", 500);
-            PoeTradeCurrencyIndex.Add("Essence Leaguestone", 501);
-            PoeTradeCurrencyIndex.Add("Invasion Leaguestone", 502);
-            PoeTradeCurrencyIndex.Add("Nemesis Leaguestone", 503);
-            PoeTradeCurrencyIndex.Add("OnSlaught Leaguestone", 504);
-            PoeTradeCurrencyIndex.Add("Perandus Leaguestone", 505);
-            PoeTradeCurrencyIndex.Add("Prophecy Leaguestone", 506);
-            PoeTradeCurrencyIndex.Add("Rampage Leaguestone", 507);
-            PoeTradeCurrencyIndex.Add("Talisman Leaguestone", 508);
-            PoeTradeCurrencyIndex.Add("Tempest Leaguestone", 509);
-            PoeTradeCurrencyIndex.Add("Torment Leaguestone", 510);
-            PoeTradeCurrencyIndex.Add("Warbands Leaguestone", 511);
             #endregion
             #region Essence
             PoeTradeCurrencyIndex.Add("Essence of Delirium", 76);
